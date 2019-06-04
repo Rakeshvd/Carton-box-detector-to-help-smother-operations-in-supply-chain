@@ -6,10 +6,10 @@ We use tensorflow object detection API to build a custom object recognition mode
 # Pre requisites
 Prerequisite packages:
 
-pillow	
-lxml
-jupyter	
-matplotlib	
+pillow, 	
+lxml, 
+jupyter, 
+matplotlib, 
 opencv
 
 All the above packages can be installed by "pip install command"
@@ -37,6 +37,9 @@ Run the following commands:
 *python xml_to_csv.py -i [PATH_TO_IMAGES_FOLDER]/test -o [PATH_TO_ANNOTATIONS_FOLDER]/test_labels.csv
 
 Converting the *.csv files of each dataset to *.record files (TFRecord format)
+
+
+
 
 1.Create a new file with name generate_tfrecord.py
 Run the following commands:
@@ -78,8 +81,6 @@ Run the following command:
 tensorboard --logdir=training\
 
 We can visualize the graphs in :http://YOUR-PC:6006 or http://localhost:6006
-
-
 
 
 
