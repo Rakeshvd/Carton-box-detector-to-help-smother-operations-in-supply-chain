@@ -41,12 +41,12 @@ Converting the *.csv files of each dataset to *.record files (TFRecord format)
 1.Create a new file with name generate_tfrecord.py
 Run the following commands:
 
-*python generate_tfrecord.py --label=<LABEL> --csv_input=<PATH_TO_ANNOTATIONS_FOLDER>/train_labels.csv
-*--img_path=<PATH_TO_IMAGES_FOLDER>/train  --output_path=<PATH_TO_ANNOTATIONS_FOLDER>/train.record
+python generate_tfrecord.py --label=<LABEL> --csv_input=<PATH_TO_ANNOTATIONS_FOLDER>/train_labels.csv
+--img_path=<PATH_TO_IMAGES_FOLDER>/train  --output_path=<PATH_TO_ANNOTATIONS_FOLDER>/train.record
 
-*python generate_tfrecord.py --label=<LABEL> --csv_input=<PATH_TO_ANNOTATIONS_FOLDER>/test_labels.csv
-*--img_path=<PATH_TO_IMAGES_FOLDER>/test
-*--output_path=<PATH_TO_ANNOTATIONS_FOLDER>/test.record
+python generate_tfrecord.py --label=<LABEL> --csv_input=<PATH_TO_ANNOTATIONS_FOLDER>/test_labels.csv
+--img_path=<PATH_TO_IMAGES_FOLDER>/test
+--output_path=<PATH_TO_ANNOTATIONS_FOLDER>/test.record
 
 # Configuring a Training Pipeline
 The model we shall be using in our examples is the ssd_inception_v2_coco model.
@@ -69,13 +69,13 @@ According to the results we get , we try to trade off with other parameters and 
 To start a new TensorBoard server, we follow the following steps:
 type this in your cmd prompt:
 
-*activate tensorflow_gpu
+activate tensorflow_gpu
 
 cd into the training_demo folder.
 
 Run the following command:
 
-*tensorboard --logdir=training\
+tensorboard --logdir=training\
 
 We can visualize the graphs in :http://YOUR-PC:6006 or http://localhost:6006
 
