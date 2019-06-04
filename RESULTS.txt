@@ -1,0 +1,72 @@
+Results
+
+WARNING:tensorflow:From C:\Python\Python35\lib\site-packages\tensorflow\python\training\input.py:753: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:From C:\Python\Python35\lib\site-packages\tensorflow\python\training\input.py:784: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+INFO:tensorflow:depth of additional conv before box predictor: 0
+INFO:tensorflow:depth of additional conv before box predictor: 0
+INFO:tensorflow:depth of additional conv before box predictor: 0
+INFO:tensorflow:depth of additional conv before box predictor: 0
+INFO:tensorflow:depth of additional conv before box predictor: 0
+INFO:tensorflow:depth of additional conv before box predictor: 0
+Use standard file utilities to get mtimes.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Starting Session.
+INFO:tensorflow:Starting Session.
+INFO:tensorflow:Saving checkpoint to path training/model.ckpt
+INFO:tensorflow:Saving checkpoint to path training/model.ckpt
+INFO:tensorflow:Starting Queues.
+INFO:tensorflow:Starting Queues.
+2019-06-04 07:00:58.819226: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+INFO:tensorflow:global_step/sec: 0
+INFO:tensorflow:global_step/sec: 0
+2019-06-04 07:01:46.252199: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+2019-06-04 07:02:07.267343: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+2019-06-04 07:02:24.182110: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+INFO:tensorflow:global_step/sec: 0
+INFO:tensorflow:global_step/sec: 0
+INFO:tensorflow:Recording summary at step 14.
+INFO:tensorflow:Recording summary at step 14.
+INFO:tensorflow:Recording summary at step 14.
+INFO:tensorflow:Recording summary at step 14.
+INFO:tensorflow:global step 15: loss = 6.4857 (226.981 sec/step)
+INFO:tensorflow:global step 15: loss = 6.4857 (226.981 sec/step)
+2019-06-04 07:04:25.656715: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+INFO:tensorflow:global_step/sec: 0.00843041
+INFO:tensorflow:global_step/sec: 0.00843041
+INFO:tensorflow:Recording summary at step 15.
+INFO:tensorflow:Recording summary at step 15.
+INFO:tensorflow:global step 16: loss = 6.4834 (107.146 sec/step)
+INFO:tensorflow:global step 16: loss = 6.4834 (107.146 sec/step)
+INFO:tensorflow:global_step/sec: 0.00830561
+INFO:tensorflow:global_step/sec: 0.00830561
+INFO:tensorflow:Recording summary at step 16.
+INFO:tensorflow:Recording summary at step 16.
+INFO:tensorflow:global step 17: loss = 6.1118 (76.555 sec/step)
+INFO:tensorflow:global step 17: loss = 6.1118 (76.555 sec/step)
+INFO:tensorflow:global step 18: loss = 6.4318 (71.426 sec/step)
+INFO:tensorflow:global step 18: loss = 6.4318 (71.426 sec/step)
+INFO:tensorflow:global_step/sec: 0.0166231
+INFO:tensorflow:global_step/sec: 0.0166231
+INFO:tensorflow:Recording summary at step 18.
+INFO:tensorflow:Recording summary at step 18.
+INFO:tensorflow:global step 19: loss = 6.1559 (74.382 sec/step)
+INFO:tensorflow:global step 19: loss = 6.1559 (74.382 sec/step)
+INFO:tensorflow:Saving checkpoint to path training/model.ckpt
+INFO:tensorflow:Saving checkpoint to path training/model.ckpt
+INFO:tensorflow:global_step/sec: 0.00837994
+INFO:tensorflow:global_step/sec: 0.00837994
+INFO:tensorflow:global step 20: loss = 5.4179 (77.200 sec/step)
+INFO:tensorflow:global step 20: loss = 5.4179 (77.200 sec/step)
+INFO:tensorflow:Stopping Training.
+INFO:tensorflow:Stopping Training.
+INFO:tensorflow:Finished training! Saving model to disk.
+INFO:tensorflow:Finished training! Saving model to disk.
+INFO:tensorflow:Recording summary at step 20.
+INFO:tensorflow:Recording summary at step 20.
