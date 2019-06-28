@@ -67,7 +67,7 @@ python train.py --logtostderr --train_dir=training/ --pipeline_config_path=train
 
 According to the results we get , we try to trade off with other parameters and hyperparameters.
 
-Total loss after :global step 20: loss = 0.54179 (77.200 sec/step)
+
 # Monitor Training Job Progress using TensorBoard
 
 To start a new TensorBoard server, we follow the following steps:
