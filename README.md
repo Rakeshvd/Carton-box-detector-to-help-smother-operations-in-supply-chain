@@ -1,8 +1,9 @@
 # Carton-box-detector-in-a-video-using-Tensorflow-object-detection-API
 This model will detect carton boxes in a video(like from CCTV camera etc),and count them .This is a application in used during supply chain management and logistics.
 
-We use tensorflow object detection API to build a custom object recognition model.
 
+We use tensorflow object detection API to build a custom object recognition model.
+#METHOD 1 
 # Pre requisites
 Prerequisite packages:
 
@@ -87,7 +88,13 @@ Finally in order to test the model on live video use webcam_demo.py file (This i
 and change model to your model and run the code.
 
 
+#MODEL 2 
+ 
+ 
+follow this link: https://cloud-annotations.github.io/training/object-detection/cli/index.html
 
+
+For test video and to see how the model works: https://www.youtube.com/watch?v=WYe-WAqHoro
 
 
 
