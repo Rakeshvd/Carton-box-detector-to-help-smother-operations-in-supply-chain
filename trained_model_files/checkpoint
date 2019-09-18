@@ -1,0 +1,6 @@
+model_checkpoint_path: "/content/drive/My Drive/weights_carton_detector/model.ckpt-70688"
+all_model_checkpoint_paths: "/content/drive/My Drive/weights_carton_detector/model.ckpt-63309"
+all_model_checkpoint_paths: "/content/drive/My Drive/weights_carton_detector/model.ckpt-65168"
+all_model_checkpoint_paths: "/content/drive/My Drive/weights_carton_detector/model.ckpt-67013"
+all_model_checkpoint_paths: "/content/drive/My Drive/weights_carton_detector/model.ckpt-68845"
+all_model_checkpoint_paths: "/content/drive/My Drive/weights_carton_detector/model.ckpt-70688"
