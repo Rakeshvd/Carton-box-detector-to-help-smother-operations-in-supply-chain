@@ -68,7 +68,7 @@ python train.py --logtostderr --train_dir=training/ --pipeline_config_path=train
 
 According to the results we get , we try to trade off with other parameters and hyperparameters.
 
-I stoped the model training for ~60000 steps for a loss of 0.02.
+I stoped the model training for 68845 steps for a loss of 0.02**.
 
 # Monitor Training Job Progress using TensorBoard
 
