@@ -53,7 +53,7 @@ python generate_tfrecord.py --label=<LABEL> --csv_input=<PATH_TO_ANNOTATIONS_FOL
 --output_path=<PATH_TO_ANNOTATIONS_FOLDER>/test.record
 
 # Configuring a Training Pipeline
-The model we shall be using in our examples is the ssd_inception_v2_coco model.
+The model we shall be using in our examples is the faster_rcnn_inception_v2_coco model.
 Goto https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md#coco-trained-models-coco-models
 and we can choose our own model based on our performance and speed.
 
@@ -64,10 +64,11 @@ We need to change neccessary parameters to make model effecient.
 3.Try and change hyperparameters
 etc
 Run the following command to start the training:
-python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_inception_v2_coco.config
+python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_coco.config
 
 According to the results we get , we try to trade off with other parameters and hyperparameters.
 
+I stopeed the model training for ~60000 steps for a loss of 0.02.
 
 # Monitor Training Job Progress using TensorBoard
 
@@ -88,7 +89,7 @@ Finally in order to test the model on live video use webcam_demo.py file (This i
 and change model to your model and run the code.
 
 
-#MODEL 2 
+#METHOD 2
  
  
 follow this link: https://cloud-annotations.github.io/training/object-detection/cli/index.html
