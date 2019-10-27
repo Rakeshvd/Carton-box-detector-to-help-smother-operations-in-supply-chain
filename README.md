@@ -3,7 +3,7 @@ This model will detect carton boxes in a video(like from CCTV camera etc),and co
 
 
 We use tensorflow object detection API to build a custom object recognition model.
-#METHOD 1 
+## METHOD 1 
 ### Pre requisites
 Prerequisite packages:
 
