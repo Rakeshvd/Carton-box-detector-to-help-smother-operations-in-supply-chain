@@ -4,7 +4,7 @@ This model will detect carton boxes in a video(like from CCTV camera etc),and co
 
 We use tensorflow object detection API to build a custom object recognition model.
 #METHOD 1 
-# Pre requisites
+### Pre requisites
 Prerequisite packages:
 
 * pillow 	
@@ -15,15 +15,15 @@ Prerequisite packages:
 
 All the above packages can be installed by "pip install command"
 
-#LabelImg
+### LabelImg
 Downloading labelImg:
 follow this link: https://github.com/tzutalin/labelImg
 After this we will be able to get images with there .xml file that stores the bounding box values
 
-# Downloading the TensorFlow Models
+### Downloading the TensorFlow Models
 * Clone this github repository and save :https://github.com/tensorflow/models
 
-# Creating TF records:
+### Creating TF records:
 * There are two steps in doing so:
 
 * Converting the individual *.xml files to a unified *.csv file for each dataset
@@ -31,10 +31,10 @@ After this we will be able to get images with there .xml file that stores the bo
 * Create a new file with name xml_to_csv.py
 Run the following commands:
 
-# Create train data:
+### Create train data:
 *python xml_to_csv.py -i [PATH_TO_IMAGES_FOLDER]/train -o [PATH_TO_ANNOTATIONS_FOLDER]/train_labels.csv*
 
-# Create test data:
+### Create test data:
 *python xml_to_csv.py -i [PATH_TO_IMAGES_FOLDER]/test -o [PATH_TO_ANNOTATIONS_FOLDER]/test_labels.csv*
 
 * Converting the *.csv files of each dataset to *.record files (TFRecord format)
@@ -49,7 +49,7 @@ Run the following commands:
 *--img_path=<PATH_TO_IMAGES_FOLDER>/test*
 *--output_path=<PATH_TO_ANNOTATIONS_FOLDER>/test.record*
 
-# Configuring a Training Pipeline
+### Configuring a Training Pipeline
 * The model we shall be using in our examples is the faster_rcnn_inception_v2_coco model.
 * Goto [](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md#coco-trained-models-coco-models) and we can choose our own model based on our performance and speed.
 * Download the .config file.
@@ -67,7 +67,7 @@ etc
 
 * According to the results we get , we try to trade off with other parameters and hyperparameters.I stoped the model training for 68845 steps for a loss of 0.02**.
 
-# Monitor Training Job Progress using TensorBoard
+### Monitor Training Job Progress using TensorBoard
 
 To start a new TensorBoard server, we follow the following steps:
 * type this in your cmd prompt:
@@ -83,7 +83,7 @@ and change model to your model and run the code.
 
 The model has been tested on the_output_final1 ,the_output_final2 ,the_output_final3 video files.
 
-#METHOD 2
+## METHOD 2
 * Follow this link: https://cloud-annotations.github.io/training/object-detection/cli/index.html
 
 * For test video and to see how the model works: https://www.youtube.com/watch?v=WYe-WAqHoro
