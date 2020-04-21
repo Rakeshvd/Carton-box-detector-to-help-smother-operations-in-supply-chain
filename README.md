@@ -24,11 +24,12 @@ After this we will be able to get images with there .xml file that stores the bo
 * Clone this github repository and save :https://github.com/tensorflow/models
 
 ### Creating TF records:
-* There are two steps in doing so:
+There are two steps in doing so:
 
-* Converting the individual *.xml files to a unified *.csv file for each dataset
+1. Converting the individual *.xml files to a unified *.csv file for each dataset
 
 * Create a new file with name xml_to_csv.py
+
 Run the following commands:
 
 ### Create train data:
@@ -37,7 +38,8 @@ Run the following commands:
 ### Create test data:
 *python xml_to_csv.py -i [PATH_TO_IMAGES_FOLDER]/test -o [PATH_TO_ANNOTATIONS_FOLDER]/test_labels.csv*
 
-* Converting the *.csv files of each dataset to *.record files (TFRecord format)
+2. Converting the *.csv files of each dataset to *.record files (TFRecord format)
+
 * Create a new file with name generate_tfrecord.py
 
 Run the following commands:
@@ -48,6 +50,11 @@ Run the following commands:
 *python generate_tfrecord.py --label=<LABEL> --csv_input=<PATH_TO_ANNOTATIONS_FOLDER>/test_labels.csv*
 *--img_path=<PATH_TO_IMAGES_FOLDER>/test*
 *--output_path=<PATH_TO_ANNOTATIONS_FOLDER>/test.record*
+
+To understand how xml package of python works , you can refer:
+
+https://www.datacamp.com/community/tutorials/python-xml-elementtree
+
 
 ### Configuring a Training Pipeline
 * The model we shall be using in our examples is the faster_rcnn_inception_v2_coco model.
