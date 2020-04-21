@@ -96,7 +96,8 @@ The model has been tested on the_output_final1 ,the_output_final2 ,the_output_fi
 * For test video and to see how the model works: https://www.youtube.com/watch?v=WYe-WAqHoro
 
 
-
+Reference:
+https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/
 
 
 
