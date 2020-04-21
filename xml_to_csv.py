@@ -28,23 +28,23 @@ def xml_to_csv(path):
     """
 
     xml_list = []
-    for xml_file in glob.glob(path + '/*.xml'):
-        tree = ET.parse(xml_file)
-        root = tree.getroot()
-        for member in root.findall('object'):
-            value = (root.find('filename').text,
-                    int(root.find('size')[0].text),
-                    int(root.find('size')[1].text),
-                    member[0].text,
-                    int(member[4][0].text),
-                    int(member[4][1].text),
-                    int(member[4][2].text),
-                    int(member[4][3].text)
+    for xml_file in glob.glob(path + '/*.xml'):   #walk into the directory
+        tree = ET.parse(xml_file)                 #read each .xml file
+        root = tree.getroot()                     #get root element
+        for member in root.findall('object'):     #get the tag named 'object'(this tag contains bounding box co-ordinated)
+            value = (root.find('filename').text,  #name of file, eg: 1training.jpg
+                    int(root.find('size')[0].text),#width of image, eg:800 
+                    int(root.find('size')[1].text),#height of image, eg: 600
+                    member[0].text,                #name of the object to be detected, here 'carton'
+                    int(member[4][0].text),        #xmin
+                    int(member[4][1].text),        #ymin
+                    int(member[4][2].text),        #xmax
+                    int(member[4][3].text)         #ymax
                     )
-            xml_list.append(value)
+            xml_list.append(value)                  # append all
     column_name = ['filename', 'width', 'height',
                 'class', 'xmin', 'ymin', 'xmax', 'ymax']
-    xml_df = pd.DataFrame(xml_list, columns=column_name)
+    xml_df = pd.DataFrame(xml_list, columns=column_name) # create pandas dataframe out of it
     return xml_df
 
 
@@ -68,9 +68,9 @@ def main():
 
     assert(os.path.isdir(args.inputDir))
 
-    xml_df = xml_to_csv(args.inputDir)
+    xml_df = xml_to_csv(args.inputDir) # this will return a pandas dataframe
     xml_df.to_csv(
-        args.outputFile, index=None)
+        args.outputFile, index=None)   #convert that dataframe to csv
     print('Successfully converted xml to csv.')
 
 
