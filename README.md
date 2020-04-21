@@ -14,6 +14,9 @@ Prerequisite packages:
 * opencv
 
 All the above packages can be installed by "pip install command"
+Before starting we need to install and dowload few files. 
+Refer: https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html#tensorflow-models-installation
+
 
 ### LabelImg
 Downloading labelImg:
