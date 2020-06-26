@@ -86,7 +86,7 @@ To start a new TensorBoard server, we follow the following steps:
 * Run the following command:
 *tensorboard --logdir=training\*
 
-We can visualize the graphs in :http://YOUR-PC:6006 or http://localhost:6006
+To visualize the graphs you can go to these url in you browser :http://YOUR-PC:6006 or http://localhost:6006
 
 Finally in order to test the model on live video use webcam_demo.py file (This is a general object detection code) 
 and change model to your model and run the code.
